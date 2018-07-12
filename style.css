@@ -1,0 +1,75 @@
+body {
+  margin: 0px; 
+  font-family: Oswald, sans-serif;
+  font-size: 24px;
+}
+
+#wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 200px 5fr; 
+
+}
+
+#nav-wrapper {
+ 
+  background-color: gray; 
+}
+
+#profile-pic {
+  width: 150px;
+  border-radius: 50%; 
+  padding: 1em;  
+  visibility: hidden; 
+}
+
+nav {
+  
+}
+
+ul {
+  margin: 0px; 
+  padding: 0px; 
+}
+
+li {
+  list-style-type: none; 
+  padding: 0.5em 1em;
+  color: white;
+  letter-spacing: 0.2em; 
+}
+
+#contact-wrapper {
+  float: left; 
+  overflow: hidden;
+}
+
+#contact {
+  width: 50vh; 
+  height: 100vh;
+  padding: 2em; 
+  background-color: lightgray;
+   
+}
+
+label {
+
+}
+
+textarea {
+  width: 90%; 
+  height: 200px; 
+  margin-top: 1em; 
+  
+}
+
+button {
+  font-family: Oswald, sans-serif;
+  font-size: 20px; 
+  background-color: gray; 
+  color: white; 
+  letter-spacing: 0.2em; 
+  border: 0px;
+  margin-top: 0.5em; 
+  padding: 1em 2em; 
+}
