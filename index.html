@@ -1,4 +1,21 @@
-<div id="wrapper">
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="wrapper">
   <div id="nav-wrapper">
     <img id="profile-pic" src="https://scontent-lax3-1.cdninstagram.com/vp/f9aaadc880a4d664bac525dba4b92356/5BD68772/t51.2885-19/s320x320/25011663_405706986525736_1727838482455330816_n.jpg?_nc_eui2=AeGiENxKN0qEmrgxuA162rRk77D3w2ij0lJDykvaMNifChAgBw0JTYTCeaAO1wpvHwYhtOksPlXukNkipibpPB1FHFje89De6a2vK2LSuEwT2w">
     <nav>
@@ -12,14 +29,39 @@
   <main>
     <div id="contact-wrapper">
       <div id="contact">
-        <form>
+        <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" required></input></br></br>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required></input></br></br>
           <label for="message">Message</label></br>
-        <textarea></textarea></br>
-        <button type="submit">Submit</button>
+          <textarea id="message" type="text" name="message" required></textarea></br>
+          <input type="hidden" name="access_token" value="77mo6kzpjedt8rslzpbn3kkx" />
+      <!-- return urls can be fully qualified -OR-
+         start with / for root relative -OR-
+         start with . for url relative --> 
+          <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+          <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+          <button id="submit_form" type="submit">Submit</button>
+          <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
         </form>
-       </div>
+        <div id="alert-wrapper">
+                  <p id="submit-message">Received, thanks!</p> 
+        </div> 
+      </div>
     </div>
-    
+    <div id="background"></div>
   </main>
 </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
